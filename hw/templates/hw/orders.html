@@ -1,0 +1,44 @@
+<h1>Заказы</h1>
+
+<h3> За неделю </h3>
+
+{% for order in week_data %}
+<p>{{ order }}</p>
+<ul>
+    {% for item in order.items.all %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<h3> За месяц </h3>
+
+{% for order in month_data %}
+<p>{{ order }}</p>
+<ul>
+    {% for item in order.items.all %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<h3> За 2 года </h3>
+
+{% for order in year_data %}
+<p>{{ order }}</p>
+<ul>
+    {% for item in order.items.all %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+
+<h2> P.S. (cделал еще один вариант для себя, на будущее, не обращайте внимания, пожалуйста) </h2>
+<h3> Итерация через обратное связывание (см синтаксис во views) </h3>
+<ul>
+    {% for item in year_items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+
+</ul>
