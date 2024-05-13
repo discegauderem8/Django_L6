@@ -1,0 +1,177 @@
+Not Found: /orders/
+Internal Server Error: /admin/hw/customer/add/
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 837, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 310, in __new__
+    fields = fields_for_model(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 205, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1839, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 839, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
+Internal Server Error: /admin/hw/customer/add/
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 837, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 310, in __new__
+    fields = fields_for_model(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 205, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1839, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 839, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
+Internal Server Error: /admin/hw/customer/add/
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 837, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 310, in __new__
+    fields = fields_for_model(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 205, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1839, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 839, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
+Internal Server Error: /admin/hw/customer/add/
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 837, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 310, in __new__
+    fields = fields_for_model(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/forms/models.py", line 205, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1839, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/discegaudere113399/.virtualenvs/virtualenv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 839, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Customer model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
