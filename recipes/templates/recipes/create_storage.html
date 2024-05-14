@@ -1,0 +1,12 @@
+{% extends 'hw/base.html' %}
+{% block content %}
+{% csrf_token %}
+
+    <h1>Create Storage</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Storage</button>
+    </form>
+
+{% endblock %}

@@ -1,6 +1,9 @@
 from django.urls import path
 from .views import index, get_orders, create_customer, create_item, create_order, upload_image
 
+
+app_name = 'hw'
+
 urlpatterns = [
     path("", index, name="index"),
     path("orders/<int:user_id>/", get_orders, name="get_data"),

@@ -1,0 +1,15 @@
+{% extends 'hw/base.html' %}
+{% block content %}
+{% csrf_token %}
+
+<h1>Search Results</h1>
+<ul>
+    <h1>Name Search</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+</ul>
+
+{% endblock %}

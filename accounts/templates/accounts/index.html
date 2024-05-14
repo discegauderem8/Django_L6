@@ -1,0 +1,10 @@
+{% extends 'accounts/base.html' %}
+{% block content %}
+
+{% csrf_token %}
+{% if message %}
+<h3>{{message}}</h3>
+{% endif %}
+
+
+{% endblock %}

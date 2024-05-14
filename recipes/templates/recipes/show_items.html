@@ -1,0 +1,20 @@
+{% extends 'hw/base.html' %}
+{% block content %}
+{% csrf_token %}
+
+<h1>{{ model_name|title }}s</h1>
+<ul>
+    {% for recipe in items %}
+    <li>{{ recipe.name }}</li>
+    <p><strong>Description:</strong> {{ recipe.description }}</p>
+    <p><strong>Guide:</strong> {{ recipe.guide }}</p>
+    <p><strong>Timing:</strong> {{ recipe.timing }}</p>
+    <p><strong>Author:</strong> {{ recipe.author }}</p>
+    <p><strong>Created at:</strong> {{ recipe.created_at }}</p>
+    {% if recipe.image %}
+    <img src="{{ recipe.image.url }}" alt="{{ recipe.name }}">
+    {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock %}

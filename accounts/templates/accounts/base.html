@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Формы{% endblock %}</title>
+</head>
+<body>
+    <a href="{% url 'hw:new_customer' %}">Тестовая ссылка</a>
+
+    {% block content %}
+        <p>Контент скоро появится...</p>
+    {% endblock %}
+</body>
+</html>
