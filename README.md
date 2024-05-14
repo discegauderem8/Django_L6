@@ -1,6 +1,3 @@
-﻿# Django-S3-Final
-# Django_S2-S3
-# Django-S4
-# Django_L6
+﻿
+UPD: Проект полностью завершен и будет доступен по адресу http://disgau.pythonanywhere.com/
 
-combined
