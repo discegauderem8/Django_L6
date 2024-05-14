@@ -36,9 +36,11 @@
     <h3>Storages</h3>
 <ul>
     {% for item in storages %}
-    <li>{{ item.name }}</li>
-    <!-- Дополнительная информация о рецепте -->
+    <li>        <strong>
+            <a href="{% url 'search_stor_by_id' this_id=item.id %}">{{ item.name }}</a>
+        </strong></li>
+
     {% endfor %}
-    <!-- Аналогично для категорий и хранилищ -->
+
 </ul>
 {% endblock %}

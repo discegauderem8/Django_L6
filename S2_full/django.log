@@ -5961,3 +5961,33 @@ Not Found: /search/
 "POST /name_search/ HTTP/1.1" 200 10936
 "GET /name_search/ HTTP/1.1" 200 11499
 "POST /name_search/ HTTP/1.1" 200 10936
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12144
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10719
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10717
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10918
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10719
+"GET /name_search/ HTTP/1.1" 200 11499
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /name_search/ HTTP/1.1" 200 10720
+"GET /name_search/ HTTP/1.1" 200 11499
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /name_search/ HTTP/1.1" 200 10720
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 11018
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 11059
+"GET /categories/ HTTP/1.1" 200 10766
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 11299
+"GET / HTTP/1.1" 200 12143

@@ -222,7 +222,7 @@ def name_search(request):
     if request.method == 'POST':
         form = SearchForm(request.POST)
         if form.is_valid():
-            id = form.cleaned_data.get('id')
+            this_id = form.cleaned_data.get('id')
             name = form.cleaned_data.get('name')
             description = form.cleaned_data.get('description')
             search_recipes = form.cleaned_data.get('recipe_check')
@@ -232,10 +232,10 @@ def name_search(request):
             recipes = Recipe.objects.all()
             categories = Category.objects.all()
             storages = Storage.objects.all()
-            if id:
-                final_recipes = recipes.filter(id=id)
-                final_categories = categories.filter(id=id)
-                final_storages = storages.filter(id=id)
+            if this_id:
+                final_recipes = recipes.filter(pk=this_id) if search_recipes else None
+                final_categories = categories.filter(pk=this_id) if search_categories else None
+                final_storages = storages.filter(pk=this_id) if search_storages else None
 
                 return render(request, 'recipes/name_search_results.html', {
                     'recipes': final_recipes,
@@ -254,19 +254,19 @@ def name_search(request):
                 storages_2 = storages.filter(description__icontains=description)
 
             if name and description:
-                final_recipes = list(chain(recipes_1, recipes_2))
-                final_categories = list(chain(categories_1, categories_2))
-                final_storages = list(chain(storages_1, storages_2))
+                final_recipes = list(chain(recipes_1, recipes_2)) if search_recipes else None
+                final_categories = list(chain(categories_1, categories_2)) if search_categories else None
+                final_storages = list(chain(storages_1, storages_2)) if search_storages else None
 
             elif name and not description:
-                final_recipes = recipes_1
-                final_categories = categories_1
-                final_storages = storages_1
+                final_recipes = recipes_1 if search_recipes else None
+                final_categories = categories_1 if search_categories else None
+                final_storages = storages_1 if search_storages else None
 
             elif description and not name:
-                final_recipes = recipes_2
-                final_categories = categories_2
-                final_storages = storages_2
+                final_recipes = recipes_2 if search_recipes else None
+                final_categories = categories_2 if search_categories else None
+                final_storages = storages_2 if search_storages else None
 
             return render(request, 'recipes/name_search_results.html', {
                 'recipes': final_recipes,
