@@ -4648,3 +4648,10 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'search_by_id' with keyword a
 "GET /search_by_id/1/ HTTP/1.1" 200 11200
 "GET /search_by_id/2/ HTTP/1.1" 200 11200
 "GET /search_by_id/3/ HTTP/1.1" 200 11185
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12690
+"GET /media/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpeg HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_vmCbqhj.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit.jpeg HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET /media/images/burger.jpeg HTTP/1.1" 304 0

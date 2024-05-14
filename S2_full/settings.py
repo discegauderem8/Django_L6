@@ -19,8 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-z^5s=jatyrc$gfs0%n*$q273-+x%45zd17nc8r9r10k#hxq+m('
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = 'django-insecure-z^5s=jatyrc$gfs0%n*$q273-+x%45zd17nc8r9r10k#hxq+m('
+# SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -33,19 +33,19 @@ ALLOWED_HOSTS = [
     "discegaudere113399.pythonanywhere.com",
 ]
 #
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'discegaudere1133$default',
-        'USER': 'discegaudere1133',
-        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'discegaudere113399.mysql.pythonanywhere-services.com',
-        'OPTIONS': {
-            'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
-            'charset': 'utf8mb4',
-        },
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'discegaudere1133$default',
+#         'USER': 'discegaudere1133',
+#         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+#         'HOST': 'discegaudere113399.mysql.pythonanywhere-services.com',
+#         'OPTIONS': {
+#             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
+#             'charset': 'utf8mb4',
+#         },
+#     }
+# }
 
 
 # Application definition
@@ -131,12 +131,12 @@ WSGI_APPLICATION = 'S2_full.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
