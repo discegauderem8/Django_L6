@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-z^5s=jatyrc$gfs0%n*$q273-+x%45zd17nc8r9r10k#hxq+m(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True #убрать потом, оставил, чтобы открывлаись картинки
+DEBUG = True #убрать потом, пока оставил, чтобы открывлаись картинки
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 

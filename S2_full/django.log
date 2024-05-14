@@ -4655,3 +4655,1068 @@ Watching for file changes with StatReloader
 "GET /media/images/fruit.jpeg HTTP/1.1" 304 0
 "GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
 "GET /media/images/burger.jpeg HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12690
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /media/images/burger.jpeg HTTP/1.1" 304 0
+"GET /media/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpeg HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_vmCbqhj.jpeg HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_ZDe3Cyv.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit.jpeg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12533
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET /items/recipe/ HTTP/1.1" 200 13900
+"GET /items/recipe/ HTTP/1.1" 200 13907
+"GET /items/recipe/ HTTP/1.1" 200 13910
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /update_recipe HTTP/1.1" 301 0
+Internal Server Error: /update_recipe/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: RecipeUpdateView.get() missing 1 required positional argument: 'pk'
+"GET /update_recipe/ HTTP/1.1" 500 84612
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /recipes HTTP/1.1" 301 0
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /recipes/ HTTP/1.1" 500 175006
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190792
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190793
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190792
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190793
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190792
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190793
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /recipe/
+"GET /recipe/ HTTP/1.1" 404 15435
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_recipe' not found. 'create_recipe' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 190604
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /recipes/ HTTP/1.1" 200 11060
+"GET /recipes/1/edit/ HTTP/1.1" 200 11671
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /recipes/1/edit/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: recipes_recipe.time_to_cook
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\edit.py", line 201, in get
+    self.object = self.get_object()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\views\generic\detail.py", line 53, in get_object
+    obj = queryset.get()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: recipes_recipe.time_to_cook
+"GET /recipes/1/edit/ HTTP/1.1" 500 175022
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /recipes/1/edit/ HTTP/1.1" 200 11672
+"POST /recipes/1/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 11043
+"GET /recipes/2/delete/ HTTP/1.1" 200 10458
+"POST /recipes/2/delete/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10898
+"GET /recipes/3/delete/ HTTP/1.1" 200 10458
+"POST /recipes/3/delete/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10753
+"GET /recipes/4/edit/ HTTP/1.1" 200 11671
+"POST /recipes/4/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10771
+"GET /recipes/5/edit/ HTTP/1.1" 200 11621
+"POST /recipes/5/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10753
+"GET /recipes/6/edit/ HTTP/1.1" 200 11643
+"POST /recipes/6/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10741
+"GET /recipes/create/ HTTP/1.1" 200 11263
+"POST /recipes/create/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10872
+"GET /recipes/create/ HTTP/1.1" 200 11263
+"POST /recipes/create/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 10997
+"GET /recipes/ HTTP/1.1" 200 12729
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_edit' with arguments '('',)' not found. 1 pattern(s) tried: ['recipes/(?P<pk>[0-9]+)/edit/\\Z']
+"GET /recipes/ HTTP/1.1" 500 244858
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_delete' with arguments '('',)' not found. 1 pattern(s) tried: ['recipes/(?P<pk>[0-9]+)/delete/\\Z']
+"GET /recipes/ HTTP/1.1" 500 245114
+"GET /recipes/ HTTP/1.1" 200 13945
+"GET /media/images/pizza.jpeg HTTP/1.1" 200 13639
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 200 14939
+"GET /media/images/sushi.jpeg HTTP/1.1" 200 16594
+"GET /media/images/ribs.jpeg HTTP/1.1" 200 16467
+"GET /media/images/sandwich.jpg HTTP/1.1" 200 50740
+"GET /recipes/ HTTP/1.1" 200 13981
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipes' not found. 'recipes' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 192106
+"GET /recipes/ HTTP/1.1" 200 14149
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 14149
+Internal Server Error: /categories/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: categories/category_list.html, recipes/category_list.html
+"GET /categories/ HTTP/1.1" 500 98131
+"GET /recipes/ HTTP/1.1" 200 14161
+"GET /recipes/ HTTP/1.1" 200 14161
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 14227
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 14203
+"GET /recipes/ HTTP/1.1" 200 14257
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 14257
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 13639
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 13639
+"GET /recipes/ HTTP/1.1" 200 13639
+"GET /recipes/ HTTP/1.1" 200 13639
+"GET / HTTP/1.1" 200 12013
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /search_by_id/7/ HTTP/1.1" 200 10831
+"GET / HTTP/1.1" 200 12043
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12058
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12043
+"GET / HTTP/1.1" 200 11974
+"GET / HTTP/1.1" 200 12073
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12060
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12069
+"GET / HTTP/1.1" 200 11989
+"GET / HTTP/1.1" 200 12058
+"GET / HTTP/1.1" 200 12058
+"GET / HTTP/1.1" 200 12058
+"GET / HTTP/1.1" 200 12069
+"GET / HTTP/1.1" 200 12058
+"GET / HTTP/1.1" 200 11989
+"GET / HTTP/1.1" 200 12073
+"GET /categories/ HTTP/1.1" 200 10683
+"GET /storages/ HTTP/1.1" 200 10994
+Internal Server Error: /storages/1/edit/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storages/storage_form.html
+"GET /storages/1/edit/ HTTP/1.1" 500 94890
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /storages/1/edit/ HTTP/1.1" 200 12809
+"POST /storages/1/edit/ HTTP/1.1" 302 0
+"GET /storages/ HTTP/1.1" 200 11477
+"GET /storages/ HTTP/1.1" 200 11482
+"GET /storages/ HTTP/1.1" 200 11486
+"GET /categories/ HTTP/1.1" 200 10683
+"GET /categories/1/edit/ HTTP/1.1" 200 10976
+"POST /categories/1/edit/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10679
+"GET /categories/1/delete/ HTTP/1.1" 200 10630
+"POST /categories/1/delete/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10379
+"GET /categories/create/ HTTP/1.1" 200 10881
+"POST /categories/create/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10683
+"GET /storages/ HTTP/1.1" 200 11379
+"GET /storages/1/edit/ HTTP/1.1" 200 12817
+"POST /storages/1/edit/ HTTP/1.1" 302 0
+"GET /storages/ HTTP/1.1" 200 11486
+"GET /recipes/ HTTP/1.1" 200 13654
+"GET / HTTP/1.1" 200 11989
+"GET /search_by_id/7/ HTTP/1.1" 200 10846
+"GET / HTTP/1.1" 200 11989
+"GET /recipes/ HTTP/1.1" 200 13654
+"GET / HTTP/1.1" 200 11989
+"GET /recipes/ HTTP/1.1" 200 13654
+"GET / HTTP/1.1" 200 12058
+"GET /recipes/ HTTP/1.1" 200 13654
+"GET / HTTP/1.1" 200 12073
+"GET /recipes/ HTTP/1.1" 200 13654
+"GET /recipes/1/edit/ HTTP/1.1" 200 11865
+"POST /recipes/1/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 14051
+"GET /recipes/4/edit/ HTTP/1.1" 200 11888
+"POST /recipes/4/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 14504
+"GET /recipes/1/edit/ HTTP/1.1" 200 12262
+"POST /recipes/1/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 21593
+"GET /recipes/ HTTP/1.1" 200 21599
+"GET /recipes/1/edit/ HTTP/1.1" 200 19351
+"GET / HTTP/1.1" 200 12073
+"GET /search_by_id/5/ HTTP/1.1" 200 10831
+"GET /search_by_id/5/ HTTP/1.1" 200 10862
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21599
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /recipes/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name_search' not found. 'name_search' is not a valid view function or pattern name.
+"GET /recipes/ HTTP/1.1" 500 203026
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /recipes/ HTTP/1.1" 200 21674
+"GET /search/ HTTP/1.1" 200 11618
+"GET /search/ HTTP/1.1" 200 11623
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11030
+"POST /search/ HTTP/1.1" 200 11030
+"GET /search/ HTTP/1.1" 200 11623
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11190
+"GET /search_by_id/1/ HTTP/1.1" 200 18541
+"GET /search_by_id/1/ HTTP/1.1" 200 18541
+"GET /recipes/1/edit/ HTTP/1.1" 200 19430
+"POST /search/ HTTP/1.1" 200 11142
+"POST /search/ HTTP/1.1" 200 11142
+"GET /search_by_id/1/ HTTP/1.1" 200 18632
+"GET /recipes/1/delete/ HTTP/1.1" 200 10704
+"GET /recipes/ HTTP/1.1" 200 21678
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21678
+"POST /search/ HTTP/1.1" 200 11142
+"POST /search/ HTTP/1.1" 200 11142
+"GET / HTTP/1.1" 200 12137
+"GET /recipes/ HTTP/1.1" 200 21678
+"GET /storages/ HTTP/1.1" 200 19504
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 10916
+"GET /recipes/ HTTP/1.1" 200 21678
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12152
+"GET /search_by_id/5/ HTTP/1.1" 200 10890
+Internal Server Error: /search_by_id/5/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 133, in search_by_id
+    return render(request, "recipes/search_by_id.html", {"item": recipe})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 28: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /search_by_id/5/ HTTP/1.1" 500 197299
+"GET /search_by_id/5/ HTTP/1.1" 200 11000
+"GET /search_by_id/5/ HTTP/1.1" 200 11035
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11147
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92171
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92171
+"GET /categories/ HTTP/1.1" 200 10762
+"GET /storages/ HTTP/1.1" 200 19504
+"GET /storages/ HTTP/1.1" 200 10739
+"GET /storages/ HTTP/1.1" 200 10739
+"GET /storages/ HTTP/1.1" 200 19508
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11146
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92171
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92308
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92308
+Internal Server Error: /search_by_id/2/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 132, in search_by_id
+    recipe = Recipe.objects.get(pk=this_id)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
+"GET /search_by_id/2/ HTTP/1.1" 500 92171
+"POST /search/ HTTP/1.1" 200 11143
+"POST /search/ HTTP/1.1" 200 11142
+"GET /search_cat_by_id/2/ HTTP/1.1" 200 10892
+"GET /categories/2/delete/ HTTP/1.1" 200 10709
+"POST /categories/2/delete/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10458
+"GET /categories/create/ HTTP/1.1" 200 10961
+"POST /categories/create/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10762
+"GET /categories/3/edit/ HTTP/1.1" 200 11055
+"GET /categories/ HTTP/1.1" 200 10762
+"GET /search/ HTTP/1.1" 200 11623
+"GET /categories/ HTTP/1.1" 200 10762
+"GET /search/ HTTP/1.1" 200 11623
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11142

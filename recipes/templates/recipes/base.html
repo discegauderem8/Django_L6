@@ -5,24 +5,23 @@
     <title>{% block title %}Формы{% endblock %}</title>
 </head>
 <body>
-    <header>
-        <h3>Menu</h3>
-        <nav>
-            <ul>
-                <li><a href="{% url 'index' %}">Main</a></li>
-                <li><a href="{% url 'create_recipe' %}">Create new recipe</a></li>
-                <li><a href="{% url 'create_category' %}">Create category</a></li>
-                <li><a href="{% url 'create_storage' %}">Create storage</a></li>
-                <li><a href="{% url 'search' %}">Search</a></li>
-                If you want to show all the objects of some category go to <strong> main_page/items/name_of_category/ (recipe/storage/storage) </strong>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h3>Menu</h3>
+    <nav class = "menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Main</a></li>
+            <li><a href="{% url 'recipe_list' %}">Recipes</a></li>
+            <li><a href="{% url 'category_list' %}">Categories</a></li>
+            <li><a href="{% url 'storage_list' %}">Storages</a></li>
+            <li><a href="{% url 'name_search' %}">Search by id,  name or description</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        {% block content %}
-            <p>Контент скоро появится...</p>
-        {% endblock %}
-    </main>
+<main>
+    {% block content %}
+    <p>Контент скоро появится...</p>
+    {% endblock %}
+</main>
 </body>
 </html>

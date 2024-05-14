@@ -1,0 +1,16 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+<h1>Categories</h1>
+<a href="{% url 'category_create' %}">Create New Category</a>
+<ul>
+    {% for item in object_list %}
+    <li>
+        <h4><strong>{{ item.name }} </strong> - <a href="{% url 'category_edit' item.pk %}">Edit</a> - <a
+                href="{% url 'category_delete' item.pk %}">Delete</a></h4>
+        <p>Category ID: {{ item.id }} </p>
+        <p>Description: {{ item.description }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

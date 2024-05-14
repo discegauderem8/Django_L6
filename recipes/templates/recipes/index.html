@@ -5,13 +5,14 @@
 <h1>Welcome to our little recipe site!</h1>
 <ul>
     {% for item in recipes %}
-    <li> <strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
-    <p>Номер этого рецепта в базе: {{ item.id }}</p>
+    <li><strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+    {% if item.image %}
+    <img src="{{ item.image.url }}" alt="{{ item.name }}">
+    <p>Recipe ID: {{ item.id }}</p>
     <p>Time to cook (hrs): {{ item.timing }}</p>
     <p>Author:</strong> {{ item.author }}</p>
     <p>Created at:</strong> {{ item.created_at }}</p>
-    {% if item.image %}
-    <img src="{{ item.image.url }}" alt="{{ item.name }}">
+
     {% endif %}
     {% endfor %}
 </ul>

@@ -1,0 +1,23 @@
+{% extends 'recipes/base.html' %}
+{% block content %}
+{% csrf_token %}
+
+<h1>Recipe Details</h1>
+<div>
+
+    <p><strong>ID:</strong> {{ item.id }}</p>
+    <p><strong>Name:</strong> {{ item.name }}
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'category_edit' item.pk %}">Edit</a>
+        <br>
+        <a href="{% url 'category_delete' item.pk %}">Delete</a></h4>
+    </p>
+
+    <p>Description: {{ item.description }}</p>
+
+</div>
+
+{% endblock %}

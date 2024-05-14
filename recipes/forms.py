@@ -4,17 +4,20 @@ from .models import Recipe, Category, Storage
 class RecipeForm(forms.ModelForm):
     class Meta:
         model = Recipe
-        fields = ['name', 'description', 'guide', 'timing', 'author', 'image']
+        # fields = ['name', 'description', 'guide', 'timing', 'author', 'image']
+        fields = '__all__'
 
 class CategoryForm(forms.ModelForm):
     class Meta:
         model = Category
-        fields = ['name', 'description']
+        # fields = ['name', 'description']
+        fields = '__all__'
 
 class StorageForm(forms.ModelForm):
     class Meta:
         model = Storage
-        fields = ['name', 'items', 'categories']
+        # fields = ['name', 'items', 'categories']
+        fields = '__all__'
 
 
 class SearchForm(forms.Form):

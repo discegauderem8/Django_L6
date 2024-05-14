@@ -2,11 +2,12 @@
 {% block content %}
 {% csrf_token %}
 
-<h1>{{ model_name|title }}s</h1>
+<h1>All The {{ model_name|title }}s: </h1>
 <ul>
     {% if model_name == 'recipe' %}
     {% for item in items %}
     <li><strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+    <p><strong>Recipe ID:</strong> {{ item.id }}</p>
     <p><strong>Description:</strong> {{ item.description }}</p>
     <p><strong>Guide:</strong> {{ item.guide }}</p>
     <p><strong>Timing:</strong> {{ item.timing }}</p>

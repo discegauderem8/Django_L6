@@ -3,20 +3,30 @@
 {% csrf_token %}
 
 <h1>Search Results</h1>
+    <h3>Recipes</h3>
 <ul>
     {% for item in recipes %}
-    <li>{{ item.name }}</li>
-    <!-- Дополнительная информация о рецепте -->
+    <li> <strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+
+    {% if item.image %}
+    <img src="{{ item.image.url }}" alt="{{ item.name }}">
+    <p>Recipe ID: {{ item.id }}</p>
+    <p>Time to cook (hrs): {{ item.timing }}</p>
+    <p>Author:</strong> {{ item.author }}</p>
+    <p>Created at:</strong> {{ item.created_at }}</p>
+    {% endif %}
     {% endfor %}
     <!-- Аналогично для категорий и хранилищ -->
 </ul>
+    <h3>Categories</h3>
 <ul>
     {% for item in categories %}
-    <li>{{ item.name }}</li>
-    <!-- Дополнительная информация о рецепте -->
+   <li> <strong><a href="{% url 'search_cat_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+    {{item.description}}
     {% endfor %}
     <!-- Аналогично для категорий и хранилищ -->
 </ul>
+    <h3>Storages</h3>
 <ul>
     {% for item in storages %}
     <li>{{ item.name }}</li>

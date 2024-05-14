@@ -1,6 +1,9 @@
 from itertools import chain
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse_lazy
+from django.views import View
+from django.views.generic import UpdateView, DeleteView, CreateView, ListView
 
 from .forms import RecipeForm, CategoryForm, StorageForm, SearchForm
 from .models import Recipe, Category, Storage
@@ -10,39 +13,39 @@ def index(request):
     recipes = Recipe.objects.all().order_by('?')[:5]  # Получаем 5 случайных рецептов из базы данных
     return render(request, 'recipes/index.html', {'recipes': recipes})
 
-
-def show_items(request, model_name="recipe"):
-    if model_name == 'recipe':
-        items = Recipe.objects.all()
-    elif model_name == 'category':
-        items = Category.objects.all()
-    elif model_name == 'storage':
-        items = Storage.objects.all()
-    else:
-        items = []
-    return render(request, 'recipes/show_items.html', {'items': items, 'model_name': model_name})
-
-
-def create_recipe(request):
-    if request.method == 'POST':
-        form = RecipeForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('show_items', model_name='recipe')  # Перенаправление на show_items с указанием модели
-    else:
-        form = RecipeForm()
-    return render(request, 'recipes/create_recipe.html', {'form': form})
-
-
-def create_category(request):
-    if request.method == 'POST':
-        form = CategoryForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('show_items', model_name='category')  # Указываем модель "category" для отображения объектов
-    else:
-        form = CategoryForm()
-    return render(request, 'recipes/create_category.html', {'form': form})
+#
+# def show_items(request, model_name="recipe"):
+#     if model_name == 'recipe':
+#         items = Recipe.objects.all()
+#     elif model_name == 'category':
+#         items = Category.objects.all()
+#     elif model_name == 'storage':
+#         items = Storage.objects.all()
+#     else:
+#         items = []
+#     return render(request, 'recipes/show_items.html', {'items': items, 'model_name': model_name})
+#
+#
+# def create_recipe(request):
+#     if request.method == 'POST':
+#         form = RecipeForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('show_items', model_name='recipe')  # Важный аргумент, нужно указывать модель!
+#     else:
+#         form = RecipeForm()
+#     return render(request, 'recipes/create_recipe.html', {'form': form})
+#
+#
+# def create_category(request):
+#     if request.method == 'POST':
+#         form = CategoryForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('show_items', model_name='category')
+#     else:
+#         form = CategoryForm()
+#     return render(request, 'recipes/create_category.html', {'form': form})
 
 
 def create_storage(request):
@@ -50,10 +53,12 @@ def create_storage(request):
         form = StorageForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('show_items', model_name='storage')  # Указываем модель "storage" для отображения объектов
+            return redirect('show_items', model_name='storage')
     else:
         form = StorageForm()
     return render(request, 'recipes/create_storage.html', {'form': form})
+
+
 
 
 def name_search(request):
@@ -127,3 +132,77 @@ def search_by_id(request, this_id=1):
     recipe = Recipe.objects.get(pk=this_id)
     return render(request, "recipes/search_by_id.html", {"item": recipe})
 
+def search_cat_by_id(request, this_id=1):
+    recipe = Category.objects.get(pk=this_id)
+    return render(request, "recipes/search_cat_by_id.html", {"item": recipe})
+
+def search_stor_by_id(request, this_id=1):
+    recipe = Storage.objects.get(pk=this_id)
+    return render(request, "recipes/search_stor_by_id.html", {"item": recipe})
+
+class RecipeListView(ListView):
+    model = Recipe
+    template_name = 'recipes/recipe_list.html'
+    context_object_name = 'recipes'
+
+class RecipeCreateView(CreateView):
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'recipes/recipe_form.html'
+    success_url = reverse_lazy('recipe_list')
+
+class RecipeUpdateView(UpdateView):
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'recipes/recipe_form.html'
+    success_url = reverse_lazy('recipe_list')
+
+class RecipeDeleteView(DeleteView):
+    model = Recipe
+    template_name = 'recipes/recipe_confirm_delete.html'
+    success_url = reverse_lazy('recipe_list')
+
+
+# Category views
+class CategoryListView(ListView):
+    model = Category
+    template_name = 'recipes/category_list.html'
+
+class CategoryCreateView(CreateView):
+    model = Category
+    form_class = CategoryForm
+    template_name = 'recipes/category_form.html'
+    success_url = reverse_lazy('category_list')
+
+class CategoryUpdateView(UpdateView):
+    model = Category
+    form_class = CategoryForm
+    template_name = 'recipes/category_form.html'
+    success_url = reverse_lazy('category_list')
+
+class CategoryDeleteView(DeleteView):
+    model = Category
+    template_name = 'recipes/category_confirm_delete.html'
+    success_url = reverse_lazy('category_list')
+
+# Storage views
+class StorageListView(ListView):
+    model = Storage
+    template_name = 'recipes/storage_list.html'
+
+class StorageCreateView(CreateView):
+    model = Storage
+    form_class = StorageForm
+    template_name = 'recipes/storage_form.html'
+    success_url = reverse_lazy('storage_list')
+
+class StorageUpdateView(UpdateView):
+    model = Storage
+    form_class = StorageForm
+    template_name = 'recipes/storage_form.html'
+    success_url = reverse_lazy('storage_list')
+
+class StorageDeleteView(DeleteView):
+    model = Storage
+    template_name = 'recipes/storage_confirm_delete.html'
+    success_url = reverse_lazy('storage_list')

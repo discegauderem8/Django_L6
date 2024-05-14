@@ -1,0 +1,17 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+<h1>Storages</h1>
+<a href="{% url 'storage_create' %}">Create New Storage</a>
+<ul>
+    {% for item in object_list %}
+    <li>
+        <h4><strong>{{ item.name }} </strong> - <a href="{% url 'storage_edit' item.pk %}">Edit</a> - <a
+                href="{% url 'storage_delete' item.pk %}">Delete</a></h4>
+        <p>Storage ID: {{ item.id }} </p>
+        <p>Items: <br></b> {{ item.items.all|join:"<br>" }}</p>
+        <p>Categories: {{ item.categories.all|join:"<br>" }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

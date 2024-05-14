@@ -1,0 +1,11 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+<h1>Delete Storage</h1>
+<p>Are you sure you want to delete "{{ object.name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+</form>
+<a href="{% url 'storage_list' %}">Back to list</a>
+{% endblock %}
