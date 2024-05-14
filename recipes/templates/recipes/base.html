@@ -5,8 +5,24 @@
     <title>{% block title %}Формы{% endblock %}</title>
 </head>
 <body>
-    {% block content %}
-        <p>Контент скоро появится...</p>
-    {% endblock %}
+    <header>
+        <h3>Menu</h3>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Main</a></li>
+                <li><a href="{% url 'create_recipe' %}">Create new recipe</a></li>
+                <li><a href="{% url 'create_category' %}">Create category</a></li>
+                <li><a href="{% url 'create_storage' %}">Create storage</a></li>
+                <li><a href="{% url 'search' %}">Search</a></li>
+                If you want to show all the objects of some category go to <strong> main_page/items/name_of_category/ (recipe/storage/storage) </strong>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+            <p>Контент скоро появится...</p>
+        {% endblock %}
+    </main>
 </body>
 </html>
