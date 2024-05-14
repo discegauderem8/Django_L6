@@ -18,7 +18,9 @@ class StorageForm(forms.ModelForm):
 
 
 class SearchForm(forms.Form):
-    name = forms.CharField(label='Name', max_length=200)
+    id = forms.IntegerField(required=False)
+    name = forms.CharField(label='Name', max_length=200,required=False)
+    description = forms.CharField(label='Description', max_length=1000, required=False)
     recipe_check = forms.BooleanField(label='Search in Recipes', required=False)
     category_check = forms.BooleanField(label='Search in Categories', required=False)
     storage_check = forms.BooleanField(label='Search in Storages', required=False)

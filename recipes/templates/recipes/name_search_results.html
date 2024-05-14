@@ -1,14 +1,27 @@
-{% extends 'hw/base.html' %}
+{% extends 'recipes/base.html' %}
 {% block content %}
 {% csrf_token %}
 
- <h1>Search Results</h1>
-    <ul>
-        {% for recipe in recipes %}
-        <li>{{ recipe.name }}</li>
-        <!-- Дополнительная информация о рецепте -->
-        {% endfor %}
-        <!-- Аналогично для категорий и хранилищ -->
-    </ul>
-
+<h1>Search Results</h1>
+<ul>
+    {% for item in recipes %}
+    <li>{{ item.name }}</li>
+    <!-- Дополнительная информация о рецепте -->
+    {% endfor %}
+    <!-- Аналогично для категорий и хранилищ -->
+</ul>
+<ul>
+    {% for item in categories %}
+    <li>{{ item.name }}</li>
+    <!-- Дополнительная информация о рецепте -->
+    {% endfor %}
+    <!-- Аналогично для категорий и хранилищ -->
+</ul>
+<ul>
+    {% for item in storages %}
+    <li>{{ item.name }}</li>
+    <!-- Дополнительная информация о рецепте -->
+    {% endfor %}
+    <!-- Аналогично для категорий и хранилищ -->
+</ul>
 {% endblock %}

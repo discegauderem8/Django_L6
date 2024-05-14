@@ -1,20 +1,43 @@
-{% extends 'hw/base.html' %}
+{% extends 'recipes/base.html' %}
 {% block content %}
 {% csrf_token %}
 
 <h1>{{ model_name|title }}s</h1>
 <ul>
-    {% for recipe in items %}
-    <li>{{ recipe.name }}</li>
-    <p><strong>Description:</strong> {{ recipe.description }}</p>
-    <p><strong>Guide:</strong> {{ recipe.guide }}</p>
-    <p><strong>Timing:</strong> {{ recipe.timing }}</p>
-    <p><strong>Author:</strong> {{ recipe.author }}</p>
-    <p><strong>Created at:</strong> {{ recipe.created_at }}</p>
-    {% if recipe.image %}
-    <img src="{{ recipe.image.url }}" alt="{{ recipe.name }}">
+    {% if model_name == 'recipe' %}
+    {% for item in items %}
+    <li><strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+    <p><strong>Guide:</strong> {{ item.guide }}</p>
+    <p><strong>Timing:</strong> {{ item.timing }}</p>
+    <p><strong>Author:</strong> {{ item.author }}</p>
+    <p><strong>Created at:</strong> {{ item.created_at }}</p>
+    {% if item.image %}
+    <img src="{{ item.image.url }}" alt="{{ item.name }}">
     {% endif %}
     {% endfor %}
+    {% elif model_name == 'category' %}
+    {% for category_item in items %}
+    <li>{{ category_item.name }}</li>
+    <p><strong>Description:</strong> {{ category_item.description }}</p>
+    {% endfor %}
+    {% elif model_name == 'storage' %}
+    {% for storage_item in items %}
+    <li>{{ storage_item.name }}</li>
+    <p><strong>Items:</strong></p>
+    <ul>
+        {% for recipe in storage_item.items.all %}
+        <li><strong><a href="{% url 'search_by_id' this_id=recipe.id %}"> {{ recipe.name }}</a></strong></li>
+        {% endfor %}
+    </ul>
+    <p><strong>Categories:</strong></p>
+    <ul>
+        {% for category in storage_item.categories.all %}
+        <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    {% endif %}
 </ul>
 
 {% endblock %}

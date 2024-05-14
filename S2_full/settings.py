@@ -23,7 +23,8 @@ SECRET_KEY = 'django-insecure-z^5s=jatyrc$gfs0%n*$q273-+x%45zd17nc8r9r10k#hxq+m(
 # SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
+DEBUG = True #убрать потом, оставил, чтобы открывлаись картинки
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
@@ -173,7 +174,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "static/"
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

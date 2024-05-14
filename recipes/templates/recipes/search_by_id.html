@@ -1,0 +1,18 @@
+{% extends 'recipes/base.html' %}
+{% block content %}
+{% csrf_token %}
+
+<h1>Recipe Details</h1>
+<div>
+    <p><strong>ID:</strong> {{ item.id }}</p>
+    <p><strong>Name:</strong> {{ item.name }}</p>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+    <p><strong>Time to cook (hrs):</strong> {{ item.timing }}</p>
+    <p><strong>Author:</strong> {{ item.author }}</p>
+    <p><strong>Created at:</strong> {{ item.created_at }}</p>
+    {% if item.image %}
+    <img src="{{ item.image.url }}" alt="{{ item.name }}">
+    {% endif %}
+</div>
+
+{% endblock %}
