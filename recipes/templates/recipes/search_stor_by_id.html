@@ -11,13 +11,12 @@
         <br>
         <br>
         <br>
-        <a href="{% url 'category_edit' item.pk %}">Edit</a>
+        <a href="{% url 'storage_edit' item.pk %}">Edit</a>
         <br>
-        <a href="{% url 'category_delete' item.pk %}">Delete</a></h4>
+        <a href="{% url 'storage_delete' item.pk %}">Delete</a></h4>
     </p>
 
-    <p>Items: <br></b> {{ item.items.all|join:"<br>" }}</p>
-    <p>Categories: {{ item.categories.all|join:"<br>" }}</p>
+    <p>Items: {{ item.description }}</p>
 
 </div>
 

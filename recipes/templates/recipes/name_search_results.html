@@ -18,14 +18,21 @@
     {% endfor %}
     <!-- Аналогично для категорий и хранилищ -->
 </ul>
-    <h3>Categories</h3>
+
+<h3>Categories</h3>
 <ul>
     {% for item in categories %}
-   <li> <strong><a href="{% url 'search_cat_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
-    {{item.description}}
+    <li>
+        <strong>
+            <a href="{% url 'search_cat_by_id' this_id=item.id %}">{{ item.name }}</a>
+        </strong>
+    </li>
+    <p>{{ item.description }}</p>
     {% endfor %}
-    <!-- Аналогично для категорий и хранилищ -->
 </ul>
+
+
+
     <h3>Storages</h3>
 <ul>
     {% for item in storages %}

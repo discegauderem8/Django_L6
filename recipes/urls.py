@@ -4,11 +4,7 @@ from .views import *
 
 urlpatterns = [
     path('', index, name='index'),
-    # path('create_recipe/', create_recipe, name='create_recipe'),
-    # path('create_category/', create_category, name='create_category'),
-    # path('create_storage/', create_storage, name='create_storage'),
-    path('search/', name_search, name='name_search'),
-    # path('items/<str:model_name>/', show_items, name='show_items'),
+    path('name_search/', name_search, name='name_search'),
     path('search_results/', name_search_results, name='name_search_results'),
     path('search_by_id/<int:this_id>/', search_by_id, name='search_by_id'),
     path('search_cat_by_id/<int:this_id>/', search_cat_by_id, name='search_cat_by_id'),

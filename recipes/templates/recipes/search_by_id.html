@@ -3,28 +3,22 @@
 {% csrf_token %}
 
 <h1>Recipe Details</h1>
-<div>
 
-    <p><strong>ID:</strong> {{ item.id }}</p>
-    <p><strong>Name:</strong> {{ item.name }}
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="{% url 'recipe_edit' item.pk %}">Edit</a>
-        <br>
-        <a href="{% url 'recipe_delete' item.pk %}">Delete</a></h4>
-    </p>
-    {% if item.image %}
-    <img src="{{ item.image.url }}" alt="{{ item.name }}">
-    {% endif %}
+<p><strong>ID:</strong> {{ item.id }}</p>
+<h1>{{ item.name }}</h1>
+<br>
+<a href="{% url 'recipe_edit' item.pk %}">Edit</a>
+<br>
+<a href="{% url 'recipe_delete' item.pk %}">Delete</a>
+{% if item.image %}
+<img src="{{ item.image.url }}" alt="{{ item.name }}">
+{% endif %}
 
-    <p>Description: {{ item.description }}</p>
-    <p>Guide: {{ item.guide }}</p>
-    <p>Timing: {{ item.timing }} hours</p>
-    <p>Author: {{ item.author }}</p>
-    <p>Created at: {{ item.created_at }}</p>
+<p>{{ item.description }}</p>
 
-</div>
+<p>Time to cook (hrs): {{ item.timing }}</p>
+<p>Author: {{ item.author }}</p>
+<p>Created at: {{ item.created_at }}</p>
 
 {% endblock %}
+

@@ -5720,3 +5720,244 @@ recipes.models.Recipe.DoesNotExist: Recipe matching query does not exist.
 "GET /search/ HTTP/1.1" 200 11623
 "GET /search/ HTTP/1.1" 200 11623
 "POST /search/ HTTP/1.1" 200 11142
+Watching for file changes with StatReloader
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 11105
+"GET /search_cat_by_id/3/ HTTP/1.1" 200 10892
+"GET /search/ HTTP/1.1" 200 11623
+"GET /storages/ HTTP/1.1" 200 19401
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 10789
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 10789
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 10789
+"GET /search/ HTTP/1.1" 200 11623
+"POST /search/ HTTP/1.1" 200 10789
+"GET /search/ HTTP/1.1" 200 11623
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 121, in search
+    return render(request, 'recipes/search.html', {'form': form})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: recipes/name_search.html
+"GET /search/ HTTP/1.1" 500 96102
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 282, in name_search
+    return render(request, 'recipes/name_search.html', {'form': form})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name_search' not found. 'name_search' is not a valid view function or pattern name.
+"GET /search/ HTTP/1.1" 500 155995
+Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 282, in name_search
+    return render(request, 'recipes/name_search.html', {'form': form})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name_search' not found. 'name_search' is not a valid view function or pattern name.
+"GET /search/ HTTP/1.1" 500 155859
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 282, in name_search
+    return render(request, 'recipes/name_search.html', {'form': form})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search' not found. 'search' is not a valid view function or pattern name.
+"GET /search/ HTTP/1.1" 500 172492
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /search/
+"GET /search/ HTTP/1.1" 404 15670
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /search/
+"GET /search/ HTTP/1.1" 404 15670
+Not Found: /search/
+"GET /search/ HTTP/1.1" 404 15670
+"GET / HTTP/1.1" 200 12144
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21682
+"GET /media/images/ribs.jpeg HTTP/1.1" 304 0
+"GET /categories/ HTTP/1.1" 200 10766
+"GET /categories/3/edit/ HTTP/1.1" 200 11059
+"GET /categories/3/delete/ HTTP/1.1" 200 10713
+"GET /categories/ HTTP/1.1" 200 10766
+"GET /categories/3/delete/ HTTP/1.1" 200 10712
+"POST /categories/3/delete/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10462
+"GET /categories/create/ HTTP/1.1" 200 10964
+"POST /categories/create/ HTTP/1.1" 302 0
+"GET /categories/ HTTP/1.1" 200 10766
+"GET /storages/ HTTP/1.1" 200 19405
+"GET /storages/1/delete/ HTTP/1.1" 200 10730
+"GET /storages/ HTTP/1.1" 200 19405
+"GET /storages/1/delete/ HTTP/1.1" 200 10730
+"POST /storages/1/delete/ HTTP/1.1" 302 0
+"GET /storages/ HTTP/1.1" 200 10453
+"GET /storages/create/ HTTP/1.1" 200 20767
+"POST /storages/create/ HTTP/1.1" 302 0
+"GET /storages/ HTTP/1.1" 200 19492
+"GET /storages/2/edit/ HTTP/1.1" 200 20828
+"POST /storages/2/edit/ HTTP/1.1" 302 0
+"GET /storages/ HTTP/1.1" 200 19512
+"GET / HTTP/1.1" 200 12141
+"GET /recipes/ HTTP/1.1" 200 21682
+"GET /recipes/6/delete/ HTTP/1.1" 200 10712
+"POST /recipes/6/delete/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 21194
+"GET /recipes/4/edit/ HTTP/1.1" 200 12424
+"POST /recipes/4/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 21198
+"GET /recipes/4/edit/ HTTP/1.1" 200 12426
+"POST /recipes/4/edit/ HTTP/1.1" 302 0
+"GET /recipes/ HTTP/1.1" 200 21194
+"GET /name_search/ HTTP/1.1" 200 11499
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10999
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10936
+"GET /name_search/ HTTP/1.1" 200 11499
+"POST /name_search/ HTTP/1.1" 200 10936
