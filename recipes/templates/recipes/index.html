@@ -5,7 +5,7 @@
 <h1>Welcome to our little recipe site!</h1>
 <ul>
     {% for item in recipes %}
-    <li><strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></strong></li>
+    <li><h5><strong><a href="{% url 'search_by_id' this_id=item.id %}"> {{ item.name }}</a></h5></strong></li>
     {% if item.image %}
     <img src="{{ item.image.url }}" alt="{{ item.name }}">
     <p>Recipe ID: {{ item.id }}</p>

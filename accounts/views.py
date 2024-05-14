@@ -1,37 +1,26 @@
+# accounts/views.py
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, authenticate
+from .forms import SignUpForm
 
-from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import render, redirect
-from django.contrib import messages
-
-def login_view(request):
+def signup_view(request):
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return render('accounts/index.html')  # Замените 'home' на вашу домашнюю страницу
-        else:
-            messages.error(request, 'Invalid username or password.')
-    return render(request, 'accounts/registration/login.html')
-
-def logout_view(request):
-    logout(request)
-    context = {"message": "Вы вышли из аккаунта"}
-    return render(request, 'accounts/index.html', context=context)  # Замените 'home' на вашу домашнюю страницу
-
-def register_view(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
-            form.save()
-            # После успешной регистрации перенаправляем пользователя на другую страницу, например, на главную страницу.
-            return redirect('mainpage', permanent=True)  # 'index' - это имя URL-шаблона для главной страницы
+            user = form.save()
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=user.username, password=raw_password)
+            if user is not None:
+                login(request, user)
+                return redirect('index')
+            else:
+                return render(request, 'accounts/signup.html', {'form': form, 'error_message': 'Failed to authenticate user.'})
     else:
-        form = UserCreationForm()
-    return render(request, 'accounts/register.html', {'form': form})
+        form = SignUpForm()
+    return render(request, 'accounts/signup.html', {'form': form})
 
-
+@login_required
+def index(request):
+    return render(request, 'index.html')
 

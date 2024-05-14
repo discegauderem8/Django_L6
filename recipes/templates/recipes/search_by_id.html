@@ -3,19 +3,16 @@
 {% csrf_token %}
 
 <h1>Recipe Details</h1>
-
-<p><strong>ID:</strong> {{ item.id }}</p>
 <h1>{{ item.name }}</h1>
 <br>
-<a href="{% url 'recipe_edit' item.pk %}">Edit</a>
-<br>
-<a href="{% url 'recipe_delete' item.pk %}">Delete</a>
 {% if item.image %}
 <img src="{{ item.image.url }}" alt="{{ item.name }}">
 {% endif %}
+<p><strong>ID:</strong> {{ item.id }}</p>
+<h5><a href="{% url 'recipe_edit' item.pk %}">Edit</a></h5>
+<h5><a href="{% url 'recipe_delete' item.pk %}">Delete</a></h5>
 
 <p>{{ item.description }}</p>
-
 <p>Time to cook (hrs): {{ item.timing }}</p>
 <p>Author: {{ item.author }}</p>
 <p>Created at: {{ item.created_at }}</p>

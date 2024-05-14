@@ -1,6 +1,9 @@
 from django.urls import path
+from django.contrib.auth import views as auth_views
 
 from .views import *
+from accounts.views import signup_view
+
 
 urlpatterns = [
     path('', index, name='index'),
@@ -24,4 +27,8 @@ urlpatterns = [
     path('storages/create/', StorageCreateView.as_view(), name='storage_create'),
     path('storages/<int:pk>/edit/', StorageUpdateView.as_view(), name='storage_edit'),
     path('storages/<int:pk>/delete/', StorageDeleteView.as_view(), name='storage_delete'),
+
+    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('logout/', logout_view, name='logout'),
+    path('signup/', signup_view, name='signup'),
 ]

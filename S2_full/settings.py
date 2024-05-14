@@ -69,6 +69,10 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
+LOGIN_URL = '/accounts/login/' # Где находится login
+LOGIN_REDIRECT_URL = '/'  # Куда перенаправлять после успешного входа
+LOGOUT_REDIRECT_URL = '/'  # Куда перенаправлять после выхода
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -113,7 +117,7 @@ ROOT_URLCONF = 'S2_full.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -155,6 +159,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

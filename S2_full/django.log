@@ -6169,3 +6169,495 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'st
 "GET /static/css/style.css HTTP/1.1" 304 0
 "GET / HTTP/1.1" 200 12606
 "GET /static/css/style.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12607
+"GET /static/css/style.css HTTP/1.1" 200 139
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 161
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 174
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 191
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 214
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 175
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 156
+"GET / HTTP/1.1" 200 12606
+"GET /static/css/style.css HTTP/1.1" 200 164
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 156
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 191
+"GET /recipes/ HTTP/1.1" 200 21593
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /recipes/create/ HTTP/1.1" 200 11928
+"GET /categories/ HTTP/1.1" 200 11165
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /name_search/ HTTP/1.1" 200 11898
+"GET / HTTP/1.1" 200 12542
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12543
+"GET /static/css/style.css HTTP/1.1" 200 241
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 273
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 350
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 350
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 350
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 350
+"GET /name_search/ HTTP/1.1" 200 11898
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /search_by_id/5/ HTTP/1.1" 200 11251
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /search_by_id/5/ HTTP/1.1" 200 11250
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /search_by_id/5/ HTTP/1.1" 200 11250
+"GET /search_by_id/5/ HTTP/1.1" 200 11250
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 200 320
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21593
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /categories/ HTTP/1.1" 200 11165
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /storages/ HTTP/1.1" 200 19911
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /name_search/ HTTP/1.1" 200 11898
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12542
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /search_by_id/1/ HTTP/1.1" 200 11703
+"GET /search_by_id/1/ HTTP/1.1" 200 11698
+"GET /static/css/style.css HTTP/1.1" 304 0
+Internal Server Error: /search_by_id/1/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py", line 288, in search_by_id
+    return render(request, "recipes/search_by_id.html", {"item": recipe})
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'endif', expected 'endblock'. Did you forget to register or load this tag?
+"GET /search_by_id/1/ HTTP/1.1" 500 202143
+"GET /search_by_id/1/ HTTP/1.1" 200 11699
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21593
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /storages/ HTTP/1.1" 200 19911
+"GET /name_search/ HTTP/1.1" 200 11898
+"GET /categories/ HTTP/1.1" 200 11165
+"GET /name_search/ HTTP/1.1" 200 11898
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12542
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12543
+"GET /static/css/style.css HTTP/1.1" 200 320
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+"GET /accounts/login/ HTTP/1.1" 500 94641
+"GET /accounts/signup/ HTTP/1.1" 200 11894
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+"GET /accounts/login/ HTTP/1.1" 500 94641
+Not Found: /login
+"GET /login HTTP/1.1" 404 15662
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12543
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /search_by_id/1/ HTTP/1.1" 302 0
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+"GET /accounts/login/?next=/search_by_id/1/ HTTP/1.1" 500 95224
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+"GET /accounts/login/?next=/ HTTP/1.1" 500 94968
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+"GET /accounts/login/?next=/ HTTP/1.1" 500 95105
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10586
+"POST /accounts/login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12544
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12582
+Method Not Allowed (GET): /logout/
+Method Not Allowed: /logout/
+"GET /logout/ HTTP/1.1" 405 0
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10586
+"POST /accounts/login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12582
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10585
+"POST /accounts/login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12582
+"GET / HTTP/1.1" 200 12582
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10691
+Not Found: /accounts/login/signup
+"GET /accounts/login/signup HTTP/1.1" 404 16654
+Not Found: /accounts/login/signup
+"GET /accounts/login/signup HTTP/1.1" 404 16654
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10696
+Not Found: /accounts/login/signup.html
+"GET /accounts/login/signup.html HTTP/1.1" 404 16674
+Not Found: /accounts/login/signup.html
+"GET /accounts/login/signup.html HTTP/1.1" 404 16674
+Not Found: /accounts/login/signup.html
+"GET /accounts/login/signup.html HTTP/1.1" 404 16674
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/signup.html
+"GET /accounts/login/signup.html HTTP/1.1" 404 16674
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10704
+Not Found: /accounts/login/recipes/signup.html
+"GET /accounts/login/recipes/signup.html HTTP/1.1" 404 16706
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\recipes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Not Found: /accounts/login/
+"GET /accounts/login/?next=/ HTTP/1.1" 404 16290
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\S2_full\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Александр\Desktop\Geek Brains\Django\FinalWork 2.0\S2_full\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10616
+"POST /accounts/login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12582
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /media/images/fruit_Tf1jdKR.jpeg HTTP/1.1" 304 0
+"GET /media/images/sushi.jpeg HTTP/1.1" 304 0
+"GET /media/images/pizza.jpeg HTTP/1.1" 304 0
+"GET /media/images/sandwich.jpg HTTP/1.1" 304 0
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10615
+"POST /accounts/login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12582
+"GET / HTTP/1.1" 200 12582
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10709
+Not Found: /accounts/login/signup
+"GET /accounts/login/signup HTTP/1.1" 404 16654
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10714
+Not Found: /accounts/login/signup_view
+"GET /accounts/login/signup_view HTTP/1.1" 404 16674
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Александр\.virtualenvs\pythonProject\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signup_view' not found. 'signup_view' is not a valid view function or pattern name.
+"GET /accounts/login/?next=/ HTTP/1.1" 500 129109
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /accounts/login/?next=/ HTTP/1.1" 200 10713
+"GET /signup/ HTTP/1.1" 200 11891
+"POST /signup/ HTTP/1.1" 200 12155
+"POST /signup/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12582
+"GET / HTTP/1.1" 200 12627
+"GET / HTTP/1.1" 200 12627
+"GET /search_by_id/7/ HTTP/1.1" 200 11299
+"GET /search_by_id/7/ HTTP/1.1" 200 11299
+"GET /search_by_id/7/ HTTP/1.1" 200 11317
+"GET / HTTP/1.1" 200 12627
+"GET /recipes/ HTTP/1.1" 200 21631
+"GET /recipes/ HTTP/1.1" 200 21631
+"GET /recipes/ HTTP/1.1" 200 21631
+"GET /recipes/ HTTP/1.1" 200 21631
+"GET /recipes/ HTTP/1.1" 200 21631
+"GET /recipes/ HTTP/1.1" 200 21640
+"GET /recipes/ HTTP/1.1" 200 21642
+"GET /media/images/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_Uu9L6nC.jpeg HTTP/1.1" 304 0
+"GET /recipes/ HTTP/1.1" 200 21642
+"GET /recipes/ HTTP/1.1" 200 21642
+"GET /recipes/ HTTP/1.1" 200 21642
+"GET /recipes/ HTTP/1.1" 200 21642
+"GET /recipes/ HTTP/1.1" 200 21677
+"GET /recipes/ HTTP/1.1" 200 21742
+"GET /recipes/ HTTP/1.1" 200 21787
+"GET /categories/ HTTP/1.1" 200 11203
+"GET /storages/ HTTP/1.1" 200 19949
+"GET /categories/ HTTP/1.1" 200 11203
+"GET /recipes/ HTTP/1.1" 200 21787
+"GET /name_search/ HTTP/1.1" 200 11934
+"GET / HTTP/1.1" 200 12627

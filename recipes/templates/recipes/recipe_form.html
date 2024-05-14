@@ -2,7 +2,7 @@
 {% extends "recipes/base.html" %}
 
 {% block content %}
-  <h1>{% if object %}Edit{% else %}Create{% endif %} Recipe</h1>
+  <h5>{% if object %}Edit{% else %}Create{% endif %} Recipe</h5>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
